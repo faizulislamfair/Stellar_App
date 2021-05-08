@@ -6,7 +6,12 @@ import './App.css';
 
 function App() {
   return (
-    
+    <BrowserRouter>
+      <div>
+        <Route component={Home} path="/" exact />
+        <Route component={NasaPhoto} path="/nasaphoto" />
+      </div>
+    </BrowserRouter>
   );
 }
 
